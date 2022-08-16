@@ -1,0 +1,10 @@
+version: "3"
+services:
+  prueba:
+    build: .
+    volumes:
+      - ./prueba/:/go/src/prueba
+    expose:
+      - 1000
+    ports:
+      - 1000:1000
